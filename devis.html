@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devis gratuit | FN Traduction</title>
+<meta name="description" content="FN Traduction — Traduction assermentée et interprétation Bengali ⇄ Français en France. Devis gratuit en 24h.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="flagbar"><span class="b"></span><span class="w"></span><span class="r"></span></div>
+<header>
+  <div class="header-inner">
+    <a class="logo" href="index.html">
+      <span class="logo-badge">FN</span>
+      <span>FN TRADUCTION<small data-fr="Bengali ⇄ Français" data-bn="বাংলা ⇄ ফ্রেঞ্চ">Bengali ⇄ Français</small></span>
+    </a>
+    <nav class="mainnav" id="mainnav">
+      <a href="index.html"  data-fr="Accueil" data-bn="হোম">Accueil</a>
+      <a href="traduction.html"  data-fr="Traduction" data-bn="অনুবাদ">Traduction</a>
+      <a href="interpretation.html"  data-fr="Interprétation" data-bn="দোভাষীগিরি">Interprétation</a>
+      <a href="services.html"  data-fr="Autres services" data-bn="অন্যান্য সেবা">Autres services</a>
+      <a href="formation.html"  data-fr="Formation" data-bn="প্রশিক্ষণ">Formation</a>
+      <a href="devis.html" class="active" data-fr="Devis gratuit" data-bn="বিনামূল্যে মূল্য-উদ্ধৃতি">Devis gratuit</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:12px;">
+      <div class="lang-switch">
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="bn">বাংলা</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="index.html" data-fr="Accueil" data-bn="হোম">Accueil</a> / <span data-fr="Devis gratuit" data-bn="বিনামূল্যে মূল্য-উদ্ধৃতি">Devis gratuit</span></div>
+    <h1 data-fr="Demander un devis gratuit" data-bn="বিনামূল্যে মূল্য-উদ্ধৃতি চান">Demander un devis gratuit</h1>
+    <p data-fr="Remplissez ce formulaire en 2 minutes : nous vous répondons avec un tarif ferme sous 24 heures ouvrées, sans engagement."
+       data-bn="এই ফর্মটি ২ মিনিটে পূরণ করুন: ২৪ ঘণ্টার মধ্যে নির্দিষ্ট মূল্য সহ উত্তর পাবেন, কোনো বাধ্যবাধকতা ছাড়াই।">Remplissez ce formulaire en 2 minutes : nous vous répondons avec un tarif ferme sous 24 heures ouvrées, sans engagement.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner">
+    <div class="split" style="align-items:start;">
+      <div>
+        <h2 class="section-title" data-fr="Votre demande" data-bn="আপনার আবেদন">Votre demande</h2>
+        <form id="devis-form" class="form-grid" action="#" method="post">
+          <div>
+            <label for="nom" data-fr="Nom complet *" data-bn="পুরো নাম *">Nom complet *</label>
+            <input type="text" id="nom" name="nom" required
+              data-fr-placeholder="Ex. : Rahima Akter" data-bn-placeholder="যেমন: রাহিমা আক্তার">
+          </div>
+          <div>
+            <label for="email" data-fr="E-mail *" data-bn="ইমেইল *">E-mail *</label>
+            <input type="email" id="email" name="email" required placeholder="vous@exemple.fr">
+          </div>
+          <div>
+            <label for="tel" data-fr="Téléphone / WhatsApp" data-bn="ফোন / WhatsApp">Téléphone / WhatsApp</label>
+            <input type="tel" id="tel" name="tel" placeholder="+33 6 12 34 56 78">
+          </div>
+          <div>
+            <label for="service" data-fr="Service souhaité *" data-bn="কাঙ্ক্ষিত সেবা *">Service souhaité *</label>
+            <select id="service" name="service" required>
+              <option value="" data-fr="— Choisir —" data-bn="— বেছে নিন —">— Choisir —</option>
+              <option value="Traduction assermentée" data-fr="Traduction assermentée" data-bn="শপথবদ্ধ অনুবাদ">Traduction assermentée</option>
+              <option value="Traduction normale" data-fr="Traduction normale" data-bn="সাধারণ অনুবাদ">Traduction normale</option>
+              <option value="Interprétation téléphonique" data-fr="Interprétation téléphonique" data-bn="টেলিফোনিক দোভাষীগিরি">Interprétation téléphonique</option>
+              <option value="Interprétation présentielle" data-fr="Interprétation présentielle" data-bn="সরাসরি দোভাষীগিরি">Interprétation présentielle</option>
+              <option value="Service administratif" data-fr="Service administratif / autre" data-bn="প্রশাসনিক সেবা / অন্যান্য">Service administratif / autre</option>
+              <option value="Formation" data-fr="Formation (FN Formation)" data-bn="প্রশিক্ষণ (FN Formation)">Formation (FN Formation)</option>
+            </select>
+          </div>
+          <div>
+            <label for="source" data-fr="Langue source" data-bn="উৎস ভাষা">Langue source</label>
+            <select id="source" name="source">
+              <option value="Bengali" data-fr="Bengali" data-bn="বাংলা">Bengali</option>
+              <option value="Français" data-fr="Français" data-bn="ফরাসি">Français</option>
+            </select>
+          </div>
+          <div>
+            <label for="cible" data-fr="Langue cible" data-bn="লক্ষ্য ভাষা">Langue cible</label>
+            <select id="cible" name="cible">
+              <option value="Français" data-fr="Français" data-bn="ফরাসি">Français</option>
+              <option value="Bengali" data-fr="Bengali" data-bn="বাংলা">Bengali</option>
+            </select>
+          </div>
+          <div>
+            <label for="delai" data-fr="Délai souhaité" data-bn="কাঙ্ক্ষিত সময়সীমা">Délai souhaité</label>
+            <input type="text" id="delai" name="delai"
+              data-fr-placeholder="Ex. : avant le 15/12, urgent…" data-bn-placeholder="যেমন: ১৫/১২-এর আগে, জরুরি…">
+          </div>
+          <div>
+            <label for="fichier" data-fr="Document (optionnel)" data-bn="নথি (ঐচ্ছিক)">Document (optionnel)</label>
+            <input type="file" id="fichier" name="fichier" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx">
+          </div>
+          <div class="full">
+            <label for="message" data-fr="Décrivez votre besoin *" data-bn="আপনার প্রয়োজন লিখুন *">Décrivez votre besoin *</label>
+            <textarea id="message" name="message" required
+              data-fr-placeholder="Ex. : J'ai besoin d'une traduction assermentée de mon acte de naissance pour la préfecture, avant le 20 du mois."
+              data-bn-placeholder="যেমন: প্রিফেকচারের জন্য আমার জন্মসনদের শপথবদ্ধ অনুবাদ দরকার, মাসের ২০ তারিখের আগে।"></textarea>
+          </div>
+          <div class="full">
+            <button type="submit" class="btn btn-primary" style="width:100%;"
+              data-fr="Envoyer ma demande de devis" data-bn="আমার মূল্য-উদ্ধৃতির আবেদন পাঠান">Envoyer ma demande de devis</button>
+            <p class="form-note" data-fr="Vos informations restent confidentielles et ne servent qu'à établir votre devis."
+               data-bn="আপনার তথ্য গোপন থাকবে এবং শুধুমাত্র মূল্য-উদ্ধৃতির কাজেই ব্যবহৃত হবে।">Vos informations restent confidentielles et ne servent qu'à établir votre devis.</p>
+            <div class="form-success" id="form-success"
+              data-fr="✅ Merci ! Votre logiciel e-mail va s'ouvrir avec votre demande pré-remplie. Si besoin, écrivez-nous directement à contact@fntraduction.fr."
+              data-bn="✅ ধন্যবাদ! আপনার ইমেইল প্রোগ্রামে পূর্বপূরণকৃত আবেদন খুলবে। প্রয়োজনে সরাসরি contact@fntraduction.fr-এ লিখুন।">✅ Merci ! Votre logiciel e-mail va s'ouvrir avec votre demande pré-remplie. Si besoin, écrivez-nous directement à contact@fntraduction.fr.</div>
+          </div>
+        </form>
+      </div>
+      <div>
+        <div class="panel" style="margin-bottom:22px;">
+          <h3 data-fr="Ce qui se passe ensuite" data-bn="এরপর কী ঘটে">Ce qui se passe ensuite</h3>
+          <ul class="checklist">
+            <li data-fr="Réponse sous 24h ouvrées avec un tarif ferme" data-bn="২৪ ঘণ্টায় নির্দিষ্ট মূল্য সহ উত্তর">Réponse sous 24h ouvrées avec un tarif ferme</li>
+            <li data-fr="Paiement uniquement après acceptation du devis" data-bn="উদ্ধৃতি গৃহীত হলেই শুধু পেমেন্ট">Paiement uniquement après acceptation du devis</li>
+            <li data-fr="Livraison par e-mail, courrier ou sur place selon le service" data-bn="সেবা অনুযায়ী ইমেইল, ডাক বা সরাসরি ডেলিভারি">Livraison par e-mail, courrier ou sur place selon le service</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3 data-fr="Vous préférez nous appeler ?" data-bn="ফোন করতে চান?">Vous préférez nous appeler ?</h3>
+          <p style="font-size:1.3rem;font-weight:700;color:var(--navy);">📱 +33 7 58 12 34 56</p>
+          <p style="color:var(--muted);margin-top:8px;" data-fr="Du lundi au samedi, 9h – 19h (heure de Paris)"
+             data-bn="সোম–শনি, সকাল ৯টা – সন্ধ্যা ৭টা (প্যারিস সময়)">Du lundi au samedi, 9h – 19h (heure de Paris)</p>
+          <p style="margin-top:12px;">📧 <a href="mailto:contact@fntraduction.fr">contact@fntraduction.fr</a></p>
+          <p style="color:var(--muted);margin-top:8px;" data-fr="WhatsApp disponible pour envoyer vos documents en photo."
+             data-bn="ছবি তুলে নথি পাঠাতে WhatsApp ব্যবহার করতে পারেন।">WhatsApp disponible pour envoyer vos documents en photo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="logo" href="index.html" style="color:#fff;">
+        <span class="logo-badge">FN</span>
+        <span style="color:#fff;">FN TRADUCTION<small style="color:#8fa5ba;" data-fr="Bengali ⇄ Français" data-bn="বাংলা ⇄ ফ্রেঞ্চ">Bengali ⇄ Français</small></span>
+      </a>
+      <p data-fr="Agence de traduction et d'interprétation spécialisée Bengali – Français, au service des particuliers, des associations et des administrations en France."
+         data-bn="ব্যক্তি, সংস্থা ও ফ্রান্সের প্রশাসনের জন্য বাংলা–ফ্রেঞ্চ বিশেষায়িত অনুবাদ ও দোভাষীগিরি সংস্থা।">Agence de traduction et d'interprétation spécialisée Bengali – Français, au service des particuliers, des associations et des administrations en France.</p>
+    </div>
+    <div>
+      <h4 data-fr="Services" data-bn="সেবাসমূহ">Services</h4>
+      <ul>
+        <li><a href="traduction.html" data-fr="Traduction assermentée" data-bn="শপথবদ্ধ অনুবাদ">Traduction assermentée</a></li>
+        <li><a href="traduction.html" data-fr="Traduction normale" data-bn="সাধারণ অনুবাদ">Traduction normale</a></li>
+        <li><a href="interpretation.html" data-fr="Interprétation téléphonique" data-bn="টেলিফোনিক দোভাষীগিরি">Interprétation téléphonique</a></li>
+        <li><a href="interpretation.html" data-fr="Interprétation présentielle" data-bn="সরাসরি দোভাষীগিরি">Interprétation présentielle</a></li>
+        <li><a href="services.html" data-fr="Aide administrative" data-bn="প্রশাসনিক সহায়তা">Aide administrative</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-fr="Liens" data-bn="লিংক">Liens</h4>
+      <ul>
+        <li><a href="devis.html" data-fr="Demander un devis" data-bn="মূল্য-উদ্ধৃতি চান">Demander un devis</a></li>
+        <li><a href="formation.html" data-fr="FN Formation" data-bn="FN ফর্মাসিয়ঁ">FN Formation</a></li>
+        <li><a href="https://www.fnformation.com" target="_blank" rel="noopener">fnformation.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 data-fr="Contact" data-bn="যোগাযোগ">Contact</h4>
+      <ul>
+        <li>📧 contact@fntraduction.fr</li>
+        <li>📱 +33 7 58 12 34 56</li>
+        <li data-fr="Paris, France — interventions dans toute la France" data-bn="প্যারিস, ফ্রান্স — সারা ফ্রান্সে সেবা">Paris, France — interventions dans toute la France</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 FN Traduction — <span data-fr="Tous droits réservés" data-bn="সর্বস্বত্ব সংরক্ষিত">Tous droits réservés</span></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
